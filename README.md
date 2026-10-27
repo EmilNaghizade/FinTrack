@@ -14,6 +14,28 @@ FinTrack helps users manage their income, expenses, and monthly budgets through 
 - **Local Persistence:** Store financial data on-device using Zustand and AsyncStorage.
 - **Dark UI:** Modern mobile interface with purple accents.
 
+## 📱 App Screenshots
+
+Explore FinTrack's modern dark-themed interface.
+
+### Dashboard & Transactions
+
+|                                   Dashboard                                   |                                    Transactions                                     |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| <img src="screenshots/dashboard.webp" width="280" alt="FinTrack Dashboard" /> | <img src="screenshots/transactions.webp" width="280" alt="FinTrack Transactions" /> |
+
+### Analytics & Budgets
+
+|                                   Analytics                                   |                                  Budgets                                  |
+| :---------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
+| <img src="screenshots/analytics.webp" width="280" alt="FinTrack Analytics" /> | <img src="screenshots/budgets.webp" width="280" alt="FinTrack Budgets" /> |
+
+### Additional Screens
+
+|                                    Transaction Filtering                                     |                                Create Budget                                 |
+| :------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| <img src="screenshots/transactions-filtered.webp" width="280" alt="Transaction Filtering" /> | <img src="screenshots/create-budget.webp" width="280" alt="Create Budget" /> |
+
 ## Tech Stack
 
 - React Native
@@ -39,7 +61,6 @@ cd FinTrack
 npm install
 npx expo start
 ```
-
 
 ## Project Status
 
