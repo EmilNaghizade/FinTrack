@@ -1,18 +1,51 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useColorScheme } from 'react-native';
+import { Stack } from "expo-router";
+import { colors } from "@/constants/theme";
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
-
-SplashScreen.preventAutoHideAsync();
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+export default function RootLayout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: colors.background,
+        },
+        headerTintColor: colors.text,
+        headerTitleStyle: {
+          fontWeight: "600",
+        },
+        contentStyle: {
+          backgroundColor: colors.background,
+        },
+        headerShadowVisible: false,
+      }}
+    >
+      <Stack.Screen
+        name="(tabs)"
+        options={{
+          headerShown: false,
+          title: "dashboard",
+        }}
+      />
+
+      <Stack.Screen
+        name="add-transaction"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="add-budget"
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="edit-transaction/[id]"
+        options={{
+          title: "Edit Transaction",
+        }}
+      />
+    </Stack>
   );
 }
