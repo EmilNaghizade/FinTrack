@@ -34,13 +34,12 @@ FinTrack helps users manage their income, expenses, and monthly budgets through 
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FinTrack.git
+git clone https://github.com/EmilNaghizade/FinTrack.git
 cd FinTrack
 npm install
 npx expo start
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username.
 
 ## Project Status
 
